@@ -111,9 +111,7 @@ class Has_Command final : public Command {
             }
          }
 
-         if(verbose()) {
-            output() << "Command '" << cmd << "' is " << (exists ? "" : "not ") << "available\n";
-         }
+         output() << "Command '" << cmd << "' is " << (exists ? "" : "not ") << "available\n";
 
          if(exists == false) {
             this->set_return_code(1);
